@@ -60,10 +60,20 @@ header .icon-o{
 }
 header .icon-o span{
   cursor: pointer;
-  font-size: 2.3em;
+  font-size: 2em;
   padding: 15px 15px 10px 15px;
   text-rendering: optimizeLegibility;
 }
+.shrink .logofixed h1{
+  font-size: 1.9em;
+}
+.shrink .icon-o{
+  padding-top: 8px;
+}
+.shrink .icon-o span{
+  font-size: 1.8em;
+}
+
 
 
 /* ---------------NOTE: contenedor landing-------------- */
@@ -122,7 +132,7 @@ header .icon-o span{
 }
 
 
-/* NOTE: texto */
+/* ------------NOTE: texto------------- */
 .contenedor_1{
   text-align: center;
 }
@@ -136,19 +146,23 @@ header .icon-o span{
   font-family: 'Montserrat', sans-serif;
   text-rendering: geometricPrecision;
   color: rgb(107, 107, 107);
-  padding-left: 5%;
+  padding-left: 4%;
+  font-size: 1em;
   font-weight: lighter;
-  padding-right: 5%;
+  padding-right: 4%;
   letter-spacing: 1px;
   word-spacing: 2px;
   line-height: 23px;
-  padding-bottom: 100px;
+  padding-bottom: 85px;
 }
 
 /*------------ NOTE: division 3 ------------ */
 .contenedor_2{
   align-items: center;
-  /*grid-template-columns: repeat(3, 1fr);*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-rows: repeat(3, 250px);
+    padding-bottom: 50px;
 }
 .contenedor_2 .text{
   align-items: center;
@@ -195,11 +209,17 @@ header .icon-o span{
     padding-left: 5%;
     padding-top: 10px;
   }
+  header .icon-o{
+    padding-top: 10px;
+  }
   header .logofixed h1{
     font-size: 2.5em;
   }
   .shrink .logofixed h1{
     font-size: 1.9em;
+  }
+  .shrink .icon-o{
+    padding-top: 8px;
   }
   .shrink .icon-o span{
     font-size: 1.9em;
@@ -245,11 +265,31 @@ header .icon-o span{
     letter-spacing: 2px;
   }
 
+  /* ----------------NOTE: texto------------ */
+  .contenedor_1{
+    text-align: center;
+  }
+  .contenedor_1 h1{
+    padding-top: 90px;
+    padding-bottom: 18px;
+  }
+  .contenedor_1 p{
+    padding-left: 6%;
+    font-size: 1em;
+    padding-right: 6%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 23px;
+    padding-bottom: 75px;
+  }
+
+
+
   /*------------ NOTE: division 3 ------------ */
   .contenedor_2{
     /*grid-template-columns: repeat(3, 1fr);*/
     grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
-    grid-template-rows: repeat(3, 550px);
+    grid-template-rows: repeat(3, 210px);
   }
 
 
@@ -263,6 +303,9 @@ header .icon-o span{
   }
   header .logofixed h1{
     font-size: 2.4em;
+  }
+  header .icon-o{
+    padding-top: 10px;
   }
   header .icon-o span{
     font-size: 2.2em;
@@ -334,46 +377,45 @@ header .icon-o span{
   }
   .contenedor_1 p{
     padding-left: 20%;
+    font-family: 'Montserrat', sans-serif;
     padding-right: 20%;
     letter-spacing: 1px;
     word-spacing: 2px;
     line-height: 23px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
   }
 
 
-    /*------------ NOTE: division 3 ------------ */
-    .contenedor_2{
-      display: grid;
-      align-items: center;
-      border: 1px solid red;
-      /*grid-template-columns: repeat(3, 1fr);*/
-      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-      grid-template-rows: repeat(1, 550px);
-    }
-    .contenedor_2 .text{
-      align-items: center;
-      text-align: center;
-    }
-    .contenedor_2 .text span{
-      font-size: 3em;
-    }
-    .contenedor_2 .text h2{
-      text-rendering: optimizeLegibility;
-      font-family: 'NTR', sans-serif;
-      font-weight: lighter;
-      font-size: 2em;
-    }
-    .contenedor_2 .text p{
-      padding-left: 20%;
-      padding-right: 20%;
-      color: #666;
-      font-size: 1.1em;
-      font-family: 'Quicksand', sans-serif;
-      text-rendering: geometricPrecision;
-      font-weight: lighter;
-      letter-spacing: 2px;
-    }
+  /*------------ NOTE: division 3 ------------ */
+  .contenedor_2{
+    align-items: center;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-rows: repeat(1, 300px);
+  }
+  .contenedor_2 .text{
+    align-items: center;
+    text-align: center;
+  }
+  .contenedor_2 .text span{
+    font-size: 3em;
+  }
+  .contenedor_2 .text h2{
+    text-rendering: optimizeLegibility;
+    font-family: 'NTR', sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
+  }
+  .contenedor_2 .text p{
+    padding-left: 20%;
+    padding-right: 20%;
+    color: #666;
+    font-size: 1.1em;
+    font-family: 'Quicksand', sans-serif;
+    text-rendering: geometricPrecision;
+    font-weight: lighter;
+    letter-spacing: 2px;
+  }
 
 
 
@@ -386,6 +428,9 @@ header .icon-o span{
   header .logofixed{
     padding-left: 8%;
     padding-top: 5px;
+  }
+  header .icon-o{
+    padding-top: 10px;
   }
 
 
@@ -431,9 +476,9 @@ header .icon-o span{
   /*------------ NOTE: division 3 ------------ */
   .contenedor_2{
     display: grid;
-    /*grid-template-columns: repeat(3, 1fr);*/
+    /*grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 40vh);*/
     grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-    grid-template-rows: repeat(1, 40vh);
   }
   .contenedor_2 .text{
     align-items: center;
