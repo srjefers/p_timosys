@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Roboto');
+/*
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
+*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: none;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+*:focus{
+  outline:none;
+}
+/* --------------NOTE:Ventana Contacto--------------*/
+.contenedor_con{
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  overflow: auto;
+  opacity: 0;
+  z-index: 50;
+  width: 100%;
+  text-align: center;
+  padding-top: 1.5vh;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  padding-bottom: 10em;
+  visibility: hidden;
+}
+.contenedor_con .closebtn1{
+  font-size: 36px;
+  color: black;
+  padding-left: 90%;
+}
+.contenedor_con .contenedor_form{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  border: 1px solid green;
+  display: grid;
+    overflow: auto;
+  align-items: center;
+}
+.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.5s 0s, visibility 0s 0s;
+  transition: opacity 0.5s 0s, visibility 0s 0s;
+  /*
+  -webkit-transition: all 0.02s;
+  -moz-transition: all 0.02s;
+  transition: all 0.02s;*/
+}
+.contenedor_con .contenedor_form .acciones input{
+  resize: none;
+  border: 1px solid #999999;
+  /*padding: 10px;*/  padding: 10px 8px 10px 8px;
+  text-rendering:  geometricPrecision;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .85em;
+  width: 100%;
+  border-radius: 3px;
+  outline: none;
+  box-sizing: border-box;
+  margin: 0 0 15px;
+  /*background: #f2f2f2;*/
+}
+.contenedor_con .contenedor_form .acciones input:hover{
+  border: 1px solid rgb(0, 133, 255);
+}
+.contenedor_con .contenedor_form .acciones input:focus{
+  border: 1px solid rgb(0, 133, 255);
+}
+.contenedor_con .contenedor_form .acciones textarea{
+  resize: none;
+  width: 100%;
+  border-radius: 3px;
+  font-size: .85em;
+  box-sizing: border-box;
+  border: 1px solid #999999;
+  text-rendering:  geometricPrecision;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 8px 10px 8px;
+  margin: 0 0 20px;
+  outline: none;
+  /*background: #f2f2f2;*/
+}
+.contenedor_con .contenedor_form .acciones textarea:hover{
+  border: 1px solid rgb(0, 133, 255);
+}
+.contenedor_con .contenedor_form .acciones textarea:focus{
+  border: 1px solid rgb(0, 133, 255);
+}
+.contenedor_1 .contenedor_1 buton, textarea, input[type="text"], select {
+    outline: none;
+}
+.contenedor_con .contenedor_form #boton{
+  width: 55%;
+  padding: 15px;
+  background-color: white;
+  font-family: 'Quicksand', sans-serif;
+  text-rendering: geometricPrecision;
+  font-weight: normal;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+  border-radius: 25px;
+  font-style: 700;
+    outline:none;
+  letter-spacing: 3px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.contenedor_con .contenedor_form #boton:hover{
+  background-color: rgb(0, 133, 255);
+  color: white;
+  border-color: rgb(0, 133, 255);
+}
+.contenedor_con .contenedor_form h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0.2em;
+  padding: 10px;
+  color: black;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+  font-family: 'NTR', sans-serif;
+  font-weight: lighter;
+}
+
+/* RESPONSIVE
+   ========================================================================= /
+
+/ Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+
+  /* ---------------NOTE: ventana contacto-------------- */
+  .contenedor_con .contenedor_form{
+    padding-left: 20%;
+    padding-right: 20%;
+    align-items: center;
+  }
+
+}
+
+/* Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+
+  /* ---------------NOTE: ventana contacto-------------- */
+  .contenedor_con .contenedor_form{
+    padding-left: 20%;
+    padding-right: 20%;
+    align-items: center;
+  }
+
+
+}
+
+/* Escritorios muy anchos
+   ------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+
+  /* --------------NOTE: contacto-------------  */
+  .contenedor_con .contenedor_form{
+    padding-left: 35%;
+    padding-right: 35%;
+    display: grid;
+    align-items: center;
+  }
+
+}

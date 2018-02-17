@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Quicksand|Roboto');
+/*
+  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+*:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+*:focus{
+  outline:none;
+}
+body{
+  background-color: white;
+}
+/* ESTILOS NORMALES (para móviles en vertical)
+   ========================================================================= */
+header{
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+header .logofixed{
+  font-family: 'Pacifico', cursive;
+  padding-left: 3%;
+  text-transform: capitalize;
+  color: white;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.02s;
+  -moz-transition: all 0.02s;
+  transition: all 0.02s;
+}
+head .logofixed h1{
+
+  -webkit-transition: all 0.06s;
+  -moz-transition: all 0.06s;
+  transition: all 0.06s;
+}
+header .icon-o{
+  color: white;
+  -webkit-transition: all 0.06s;
+  -moz-transition: all 0.06s;
+  transition: all 0.06s;
+  padding: 10px 0px 0px 0px;
+  margin-right: 3%;
+  margin-left: auto;
+}
+header .icon-o span{
+  cursor: pointer;
+  font-size: 2.3em;
+  padding: 15px 15px 10px 15px;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* ---------------NOTE: contenedor landing-------------- */
+.contenedor_0{
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  padding-left: 4%;
+  /*background-image: linear-gradient(to left,  #C33764, #1D2671);/*#FF512F, #DD2476);/*);#F09459, #e66586);#C33764, #1D2671*/
+}
+.contenedor_0 .titles{
+  align-items: center;
+  padding-top: 37vh;
+}
+.contenedor_0 .titles h1{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0px;
+  text-rendering: geometricPrecision;
+  font-size: 1.9em;
+  font-weight: 100;
+}
+.contenedor_0 .text{
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+.contenedor_0 .text h3{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-rendering: geometricPrecision;
+  font-size: 0.8em;
+  font-weight: 100;
+  color: rgb(205, 205, 205);
+}
+.contenedor_0 a{
+  color: white;
+  font-size: 0.8em;
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: geometricPrecision;
+  letter-spacing: 2px;
+}
+.contenedor_0 a span{
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 10px 10px;
+  margin-right: 5px;
+  font-size: 0.8em;
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: geometricPrecision;
+  letter-spacing: 2px;
+}
+.contenedor_0 a span:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* NOTE: texto */
+.contenedor_1{
+  text-align: center;
+}
+.contenedor_1 h1{
+  padding-top: 100px;
+  padding-bottom: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: geometricPrecision;
+}
+.contenedor_1 p{
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: geometricPrecision;
+  color: rgb(107, 107, 107);
+  padding-left: 5%;
+  font-weight: lighter;
+  padding-right: 5%;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 23px;
+  padding-bottom: 100px;
+}
+
+/*------------ NOTE: division 3 ------------ */
+.contenedor_2{
+  align-items: center;
+  /*grid-template-columns: repeat(3, 1fr);*/
+}
+.contenedor_2 .text{
+  align-items: center;
+  text-align: center;
+}
+#icon1{
+  color: rgb(0, 203, 255);
+}
+#icon2{
+  color: rgb(255, 60, 50);
+}
+#icon3{
+  color: rgb(251, 169, 5);
+}
+.contenedor_2 .text span{
+  font-size: 3em;
+}
+.contenedor_2 .text h2{
+  text-rendering: optimizeLegibility;
+  font-family: 'NTR', sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
+}
+.contenedor_2 .text p{
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #666;
+  font-size: 1.1em;
+  font-family: 'Quicksand', sans-serif;
+  text-rendering: geometricPrecision;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+
+
+/* RESPONSIVE
+   ========================================================================= /
+
+/ Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  header .logofixed{
+    padding-left: 5%;
+    padding-top: 10px;
+  }
+  header .logofixed h1{
+    font-size: 2.5em;
+  }
+  .shrink .logofixed h1{
+    font-size: 1.9em;
+  }
+  .shrink .icon-o span{
+    font-size: 1.9em;
+  }
+  /* ---------NOTE: texto inicial------------- */
+  .contenedor_0{
+    text-align: inherit;
+  }
+  .contenedor_0 .titles{
+    align-items: center;
+    padding-left: 5%;
+    padding-top: 37vh;
+  }
+  .contenedor_0 .titles h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-rendering: geometricPrecision;
+    font-size: 2.3em;
+    font-weight: 100;
+  }
+  .contenedor_0 .text{
+    padding-top: 15px;
+    padding-left: 5%;
+    padding-bottom: 25px;
+  }
+  .contenedor_0 .text h3{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-rendering: geometricPrecision;
+    font-size: 0.9em;
+    font-weight: 100;
+    color: rgb(205, 205, 205);
+  }
+  .contenedor_0 a{
+    margin-left: 5%;
+  }
+  .contenedor_0 a span{
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 10px;
+    margin-right: 5px;
+    letter-spacing: 2px;
+  }
+
+  /*------------ NOTE: division 3 ------------ */
+  .contenedor_2{
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+    grid-template-rows: repeat(3, 550px);
+  }
+
+
+}
+
+/* Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  header .logofixed{
+    padding-left: 8%;
+  }
+  header .logofixed h1{
+    font-size: 2.4em;
+  }
+  header .icon-o span{
+    font-size: 2.2em;
+  }
+
+
+  /* ---------------NOTE: ventana contacto-------------- */
+
+  .contenedor_0{
+    text-align: inherit;
+  }
+  .contenedor_0 .titles{
+    text-align: inherit;
+    align-items: center;
+    padding-left: 8%;
+    padding-top: 37vh;
+  }
+  .contenedor_0 .titles h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-rendering: geometricPrecision;
+    font-size: 3.2em;
+    font-weight: 100;
+  }
+  .contenedor_0 .text{
+    text-align: inherit;
+    padding-top: 15px;
+    padding-left: 8%;
+    padding-bottom: 25px;
+  }
+  .contenedor_0 .text h3{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-rendering: geometricPrecision;
+    font-size: 1.2em;
+    font-weight: 100;
+    color: rgb(205, 205, 205);
+  }
+  .contenedor_0 a{
+    margin-left: 8%;
+    text-align: inherit;
+    color: white;
+    font-size: 0.9em;
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: geometricPrecision;
+    letter-spacing: 2px;
+  }
+  .contenedor_0 a span{
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 10px;
+    margin-right: 5px;
+    font-size: 0.8em;
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: geometricPrecision;
+    letter-spacing: 2px;
+  }
+
+  /* ------------NOTE: como trabajamos------------ */
+
+  .contenedor_1 h1{
+    padding-top: 120px;
+    padding-bottom: 20px;
+    font-size: 1.9em;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+  }
+  .contenedor_1 p{
+    padding-left: 20%;
+    padding-right: 20%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 23px;
+    padding-bottom: 120px;
+  }
+
+
+    /*------------ NOTE: division 3 ------------ */
+    .contenedor_2{
+      display: grid;
+      align-items: center;
+      border: 1px solid red;
+      /*grid-template-columns: repeat(3, 1fr);*/
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      grid-template-rows: repeat(1, 550px);
+    }
+    .contenedor_2 .text{
+      align-items: center;
+      text-align: center;
+    }
+    .contenedor_2 .text span{
+      font-size: 3em;
+    }
+    .contenedor_2 .text h2{
+      text-rendering: optimizeLegibility;
+      font-family: 'NTR', sans-serif;
+      font-weight: lighter;
+      font-size: 2em;
+    }
+    .contenedor_2 .text p{
+      padding-left: 20%;
+      padding-right: 20%;
+      color: #666;
+      font-size: 1.1em;
+      font-family: 'Quicksand', sans-serif;
+      text-rendering: geometricPrecision;
+      font-weight: lighter;
+      letter-spacing: 2px;
+    }
+
+
+
+
+}
+
+/* Escritorios muy anchos
+   ------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  header .logofixed{
+    padding-left: 8%;
+    padding-top: 5px;
+  }
+
+
+  /*.contenedor_0 .titles{
+    align-items: center;
+    padding-left: 8%;
+    padding-top: 37vh;
+  }
+  .contenedor_0 .titles h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-rendering: geometricPrecision;
+    font-size: 3.2em;
+    font-weight: 100;
+  }
+  .contenedor_0 .text{
+    padding-top: 15px;
+    padding-left: 8%;
+    padding-bottom: 25px;
+  }
+  .contenedor_0 .text h3{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-rendering: geometricPrecision;
+    font-size: 1.2em;
+    font-weight: 100;
+    color: rgb(205, 205, 205);
+  }
+  .contenedor_0 a{
+    margin-left: 8%;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 0.9em;
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: geometricPrecision;
+    letter-spacing: 2px;
+  }*/
+
+
+  /*------------ NOTE: division 3 ------------ */
+  .contenedor_2{
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    grid-template-rows: repeat(1, 40vh);
+  }
+  .contenedor_2 .text{
+    align-items: center;
+    text-align: center;
+  }
+  .contenedor_2 .text .icon-glyph-18{
+    color: rgb(0, 203, 255);
+  }
+  .contenedor_2 .text .icon-glyph-13{
+    color: rgb(255, 60, 50);
+  }
+  .contenedor_2 .text .icon-glyph-22{
+    color: rgb(251, 169, 5);
+  }
+  .contenedor_2 .text span{
+    font-size: 3em;
+  }
+  .contenedor_2 .text h2{
+    text-rendering: optimizeLegibility;
+    font-family: 'NTR', sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
+  }
+  .contenedor_2 .text p{
+    padding-left: 20%;
+    padding-right: 20%;
+    color: #666;
+    font-size: 1.1em;
+    font-family: 'Quicksand', sans-serif;
+    text-rendering: geometricPrecision;
+    font-weight: lighter;
+    letter-spacing: 2px;
+  }
+
+
+}

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Roboto');
+/*
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
+*/
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  outline: none;
+}
+/* ESTILOS NORMALES (para móviles en vertical)
+   ========================================================================= */
+body{
+  background-color: #333;
+}
+header{
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+header .logofixed{
+  font-family: 'Pacifico', cursive;
+  padding-left: 3%;
+  text-transform: capitalize;
+  color: white;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 2px;
+  line-height: 70px;
+  -webkit-transition: all 0.02s;
+  -moz-transition: all 0.02s;
+  transition: all 0.02s;
+}
+header .icon-o{
+  color: white;
+  -webkit-transition: all 0.02s;
+  -moz-transition: all 0.02s;
+  padding: 10px 0px 0px 0px;
+  transition: all 0.02s;
+  margin-right: 3%;
+  margin-left: auto;
+}
+header .icon-o span{
+  cursor: pointer;
+  font-size: 2.3em;
+  padding: 15px 15px 10px 15px;
+  text-rendering: optimizeLegibility;
+}
+.sidenav {
+  border-left: 1px solid #e3e3e3;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 0px 8px 0px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'NTR', sans-serif;
+  font-weight: lighter;
+  color: #53575a;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #ff3c32;
+}
+.sidenav #sele{
+  color: #ff3c32;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav .closebtn:focus{outline:none}
+
+
+
+/*------------ NOTE: division 3 ------------ */
+.contenedor_2{
+  align-items: center;
+  /*grid-template-columns: repeat(3, 1fr);*/
+}
+.contenedor_2 .text{
+  align-items: center;
+  text-align: center;
+}
+.contenedor_2 .text .icon-glyph-18{
+  color: rgb(0, 203, 255);
+}
+.contenedor_2 .text .icon-glyph-13{
+  color: rgb(255, 60, 50);
+}
+.contenedor_2 .text .icon-glyph-22{
+  color: rgb(251, 169, 5);
+}
+.contenedor_2 .text span{
+  font-size: 3em;
+}
+.contenedor_2 .text h2{
+  text-rendering: optimizeLegibility;
+  font-family: 'NTR', sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
+}
+.contenedor_2 .text p{
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #666;
+  font-size: 1.1em;
+  font-family: 'Quicksand', sans-serif;
+  text-rendering: geometricPrecision;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+/* RESPONSIVE
+   ========================================================================= /
+
+/ Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  body{
+    background-color: #555;
+  }
+  header .logofixed{
+    padding-left: 5%;
+    padding-top: 2vh;
+  }
+  header .logofixed h1{
+    font-size: 2.7em;
+  }
+  /*------------ NOTE: division 3 ------------ */
+  .contenedor_2{
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+    grid-template-rows: repeat(3, 43vh);
+  }
+
+}
+
+/* Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  body{
+    background-color: #888;
+  }
+  header .logofixed{
+    padding-left: 8%;
+    padding-top: 2vh;
+  }
+  header .logofixed h1{
+    font-size: 3.2em;
+  }
+  /*------------ NOTE: division 3 ------------ */
+  .contenedor_2{
+    display: grid;
+    align-items: center;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-rows: repeat(1, 40vh);
+  }
+  .contenedor_2 .text{
+    align-items: center;
+    text-align: center;
+  }
+  .contenedor_2 .text .icon-glyph-18{
+    color: rgb(0, 203, 255);
+  }
+  .contenedor_2 .text .icon-glyph-13{
+    color: rgb(255, 60, 50);
+  }
+  .contenedor_2 .text .icon-glyph-22{
+    color: rgb(251, 169, 5);
+  }
+  .contenedor_2 .text span{
+    font-size: 3em;
+  }
+  .contenedor_2 .text h2{
+    text-rendering: optimizeLegibility;
+    font-family: 'NTR', sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
+  }
+  .contenedor_2 .text p{
+    padding-left: 20%;
+    padding-right: 20%;
+    color: #666;
+    font-size: 1.1em;
+    font-family: 'Quicksand', sans-serif;
+    text-rendering: geometricPrecision;
+    font-weight: lighter;
+    letter-spacing: 2px;
+  }
+
+}
+
+/* Escritorios muy anchos
+   ------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  body{
+    background-color: white;
+  }
+  header .logofixed{
+    padding-left: 8%;
+    padding-top: 2vh;
+  }
+  header .logofixed h1{
+    font-size: 3.2em;
+  }
+  .shrink{
+    height: 70px;
+  }
+  /*---------- NOTE: landing page ----------*/
+  .contenedor_0{
+    padding-top: 50px;
+    height: 100vh;
+    font-size: 9em;
+    color: white;
+    background: black;
+  }
+  /*---------- NOTE: how it works ----------*/
+  .contenedor_1{
+    background-color: #2a3a3a;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contenedor_1 .texto{
+    justify-content: center;
+    align-items: center;
+  }
+  /*GRID GAP===== SEPARA CADA UNO "grid-gap:10px;*/
+  /*------------ NOTE: bloques de texto ------------*/
+  .contenedor_2{
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    grid-template-rows: repeat(1, 200px);
+  }
+  .contenedor_2 .image{
+    align-items: center;
+    text-align: center;
+  }
+  .contenedor_2 .text .icon-glyph-18{
+    color: rgb(0, 203, 255);
+  }
+  .contenedor_2 .text .icon-glyph-13{
+    color: rgb(255, 60, 50);
+  }
+  .contenedor_2 .text .icon-glyph-22{
+    color: rgb(251, 169, 5);
+  }
+  .contenedor_2 .text span{
+    font-size: 3em;
+  }
+  .contenedor_2 .text h2{
+    text-rendering: optimizeLegibility;
+    font-family: 'NTR', sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
+  }
+  .contenedor_2 .text p{
+    padding-left: 20%;
+    padding-right: 20%;
+    color: #666;
+    font-size: 1.1em;
+    font-family: 'Quicksand', sans-serif;
+    text-rendering: geometricPrecision;
+    font-weight: lighter;
+    letter-spacing: 2px;
+  }
+
+  /*-------- NOTE: bloque con imagen y texto --------*/
+
+  /*------------ NOTE: bloque contacto ------------*/
+  .contenedor_4{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor_4 h1{
+    padding-right: 20%;
+  }
+  /*------------ NOTE: bloque muchos ------------*/
+  .contenedor_5{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contenedor_5 .texto{
+    justify-content: center;
+    align-items: center;
+  }
+  /*---------------- NOTE: bloques----------------*/
+  .contenedor_6{
+    display: grid;
+
+  }
+  .contenedor_6 .bloques{
+    background-color: gray;
+  }
+
+
+}
