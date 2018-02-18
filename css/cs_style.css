@@ -87,6 +87,7 @@ header .icon-o span{
 .contenedor_0 .titles{
   align-items: center;
   padding-top: 37vh;
+  padding-right: 20%;
 }
 .contenedor_0 .titles h1{
   color: white;
@@ -159,10 +160,7 @@ header .icon-o span{
 /*------------ NOTE: division 3 ------------ */
 .contenedor_2{
   align-items: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  grid-template-rows: repeat(3, 250px);
-    padding-bottom: 50px;
+  /*grid-template-columns: repeat(3, 1fr);*/
 }
 .contenedor_2 .text{
   align-items: center;
@@ -187,8 +185,7 @@ header .icon-o span{
   font-size: 2em;
 }
 .contenedor_2 .text p{
-  padding-left: 20%;
-  padding-right: 20%;
+  padding: 0 8% 55px 8%;
   color: #666;
   font-size: 1.1em;
   font-family: 'Quicksand', sans-serif;
@@ -197,7 +194,40 @@ header .icon-o span{
   letter-spacing: 2px;
 }
 
+/* ---------------NOTE: contenedor 4-------------- */
+.contenedor_4{
+  background-image: linear-gradient(to left, #ee0979, #ff6a00);/*);#F09459, #e66586);#C33764, #1D2671*/
+  padding: 75px 8% 75px 8%;
+  align-items: center;
+  text-align: center;
+}
+.contenedor_4 h1{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 1.8em;
+}
+.ptr4{
+  margin-top: -10px;
+  text-align: center;
+}
+.ptr4 a{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .9em;
+  background-color: black;
+  padding: 15px 35px;
+  font-family: 'Roboto', sans-serif;
+  text-rendering: geometricPrecision;
+  border-radius: 25px;
+}
 
+
+/* NOTE: contenedor 5 */
+.contenedor_5{
+  height: 70vh;
+}
 
 /* RESPONSIVE
    ========================================================================= /
@@ -231,6 +261,7 @@ header .icon-o span{
   .contenedor_0 .titles{
     align-items: center;
     padding-left: 5%;
+    padding-right: 25%;
     padding-top: 37vh;
   }
   .contenedor_0 .titles h1{
@@ -270,7 +301,7 @@ header .icon-o span{
     text-align: center;
   }
   .contenedor_1 h1{
-    padding-top: 90px;
+    padding-top: 090px;
     padding-bottom: 18px;
   }
   .contenedor_1 p{
@@ -287,9 +318,20 @@ header .icon-o span{
 
   /*------------ NOTE: division 3 ------------ */
   .contenedor_2{
+    display: grid;
     /*grid-template-columns: repeat(3, 1fr);*/
     grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
     grid-template-rows: repeat(3, 210px);
+  }
+  .contenedor_2 .text p{
+    padding-bottom: 0;
+  }
+
+
+
+  /* ---------------NOTE: contenedor 4-------------- */
+  .contenedor_4 h1{
+    font-size: 1.8em;
   }
 
 
@@ -321,6 +363,7 @@ header .icon-o span{
     text-align: inherit;
     align-items: center;
     padding-left: 8%;
+    padding-right: 40%;
     padding-top: 37vh;
   }
   .contenedor_0 .titles h1{
@@ -388,10 +431,11 @@ header .icon-o span{
 
   /*------------ NOTE: division 3 ------------ */
   .contenedor_2{
+    display: grid;
     align-items: center;
     /*grid-template-columns: repeat(3, 1fr);*/
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    grid-template-rows: repeat(1, 300px);
+    grid-template-rows: repeat(1, 350px);
   }
   .contenedor_2 .text{
     align-items: center;
@@ -418,6 +462,13 @@ header .icon-o span{
   }
 
 
+  /* ---------------NOTE: contenedor 4-------------- */
+  .contenedor_4 h1{
+    font-size: 2em;
+  }
+  .ptr4 a{
+    font-size: .8em;
+  }
 
 
 }
@@ -434,50 +485,12 @@ header .icon-o span{
   }
 
 
-  /*.contenedor_0 .titles{
-    align-items: center;
-    padding-left: 8%;
-    padding-top: 37vh;
-  }
-  .contenedor_0 .titles h1{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1px;
-    text-rendering: geometricPrecision;
-    font-size: 3.2em;
-    font-weight: 100;
-  }
-  .contenedor_0 .text{
-    padding-top: 15px;
-    padding-left: 8%;
-    padding-bottom: 25px;
-  }
-  .contenedor_0 .text h3{
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1px;
-    text-rendering: geometricPrecision;
-    font-size: 1.2em;
-    font-weight: 100;
-    color: rgb(205, 205, 205);
-  }
-  .contenedor_0 a{
-    margin-left: 8%;
-    color: white;
-    border: 1px solid white;
-    border-radius: 25px;
-    padding: 10px 25px;
-    font-size: 0.9em;
-    font-family: 'Montserrat', sans-serif;
-    text-rendering: geometricPrecision;
-    letter-spacing: 2px;
-  }*/
+  /*------------ NOTE: division 2 ------------ */
+  /*grid-template-columns: repeat(3, 1fr
 
-
-  /*------------ NOTE: division 3 ------------ */
+  grid-template-rows: repeat(1, 40vh););*/
   .contenedor_2{
     display: grid;
-    /*grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 40vh);*/
     grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
   }
   .contenedor_2 .text{
@@ -512,6 +525,12 @@ header .icon-o span{
     font-weight: lighter;
     letter-spacing: 2px;
   }
+
+  /* ---------------NOTE: contenedor 4-------------- */
+  .contenedor_4 h1{
+    font-size: 2.3em;
+  }
+
 
 
 }
