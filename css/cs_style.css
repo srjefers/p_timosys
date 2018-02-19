@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Quicksand|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|NTR|Pacifico|Quicksand|Roboto');
 /*
-  font-family: 'Pacifico', cursive;
+  font-family: 'NTR', sans-serif;
   font-family: 'Roboto', sans-serif;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Quicksand', sans-serif;
+  font-family: 'Pacifico', cursive;
 */
 *{
     padding: 0;
@@ -194,6 +195,56 @@ header .icon-o span{
   letter-spacing: 2px;
 }
 
+/* -----------NOTE: imagenes y texto con animacion y movimiento-------- */
+.contenedor_3{
+}
+.contenedor_3 .images{
+  /*padding-left: 2%;------>imagen solida*/
+  padding-left: 4%;
+  padding-top: 35px;
+  padding-bottom: 75px;
+  display: flex;
+}
+.contenedor_3 .images .uno{
+  width: 25px;
+}
+.contenedor_3 .images .uno img{
+  /*width: 980px;---->imagen solida*/
+  width: 80vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+.contenedor_3 .images .dos{
+  padding-top: 35px;
+  padding-left: 190px;
+}
+.contenedor_3 .images .dos img{
+  width: 33vw;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.texto{
+  text-align: center;
+}
+.texto h1{
+  font-family: 'NTR', sans-serif;
+  text-rendering: geometricPrecision;
+  font-size: 2.1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+.texto p{
+  padding-bottom: 25px;
+  font-size: 1.1em;
+  font-family: 'Quicksand', sans-serif;
+  text-rendering: geometricPrecision;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: rgb(107, 107, 107);
+  word-spacing: 2px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 /* ---------------NOTE: contenedor 4-------------- */
 .contenedor_4{
   background-image: linear-gradient(to left, #ee0979, #ff6a00);/*);#F09459, #e66586);#C33764, #1D2671*/
@@ -326,6 +377,49 @@ header .icon-o span{
   .contenedor_2 .text p{
     padding-bottom: 0;
   }
+  /* -----------NOTE: imagenes y texto con animacion y movimiento-------- */
+  .contenedor_3 .images{
+    /*padding-left: 2%;------>imagen solida*/
+    padding-left: 10%;
+    padding-top: 35px;
+    padding-bottom: 75px;
+    align-content: center;
+    display: flex;
+  }
+  .contenedor_3 .images .uno img{
+    /*width: 980px;---->imagen solida*/
+    width: 580px;
+  }
+  .contenedor_3 .images .dos{
+    padding-top: 35px;
+    padding-left: 390px;
+  }
+  .contenedor_3 .images .dos img{
+    width: 235px;
+  }
+
+  .texto h1{
+    font-family: 'NTR', sans-serif;
+    text-rendering: geometricPrecision;
+    font-size: 2.9em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+  .texto p{
+    padding-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: geometricPrecision;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: rgb(107, 107, 107);
+    word-spacing: 2px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+
+
 
 
 
@@ -461,6 +555,40 @@ header .icon-o span{
     letter-spacing: 2px;
   }
 
+  /* -----------NOTE: imagenes y texto con animacion y movimiento-------- */
+  .contenedor_3 .images{
+    /*padding-left: 2%;------>imagen solida*/
+    padding-left: 10%;
+    padding-top: 35px;
+    padding-bottom: 75px;
+    display: flex;
+  }
+  .contenedor_3 .images .uno img{
+    /*width: 980px;---->imagen solida*/
+    width: 800px;
+  }
+  .contenedor_3 .images .dos{
+    padding-top: 35px;
+    padding-left: 500px;
+  }
+  .contenedor_3 .images .dos img{
+    width: 325px;
+  }
+  .texto h1{
+    font-size: 2.9em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+  .texto p{
+    padding-bottom: 25px;
+    word-spacing: 2px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+
+
 
   /* ---------------NOTE: contenedor 4-------------- */
   .contenedor_4 h1{
@@ -524,6 +652,23 @@ header .icon-o span{
     text-rendering: geometricPrecision;
     font-weight: lighter;
     letter-spacing: 2px;
+  }
+
+  /*---------------NOTE: contenedor 3-------------*/
+  .contenedor_3 .images{
+    /*padding-left: 2%;------>imagen solida*/
+    padding-left: 15%;
+    padding-top: 35px;
+    padding-bottom: 75px;
+    display: flex;
+  }
+  .contenedor_3 .images .uno img{
+    /*width: 980px;---->imagen solida*/
+    width: 800px;
+  }
+  .contenedor_3 .images .dos{
+    padding-top: 35px;
+    padding-left: 500px;
   }
 
   /* ---------------NOTE: contenedor 4-------------- */
