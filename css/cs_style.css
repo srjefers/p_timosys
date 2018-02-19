@@ -80,9 +80,8 @@ header .icon-o span{
 .contenedor_0{
   align-items: center;
   height: 100vh;
-  background-color: black;
   padding-left: 4%;
-  /*background-image: linear-gradient(to left,  #C33764, #1D2671);/*#FF512F, #DD2476);/*);#F09459, #e66586);#C33764, #1D2671*/
+  background-image: linear-gradient(to left, #ee0979, #ff6a00);/*#FF512F, #DD2476);/*);#F09459, #e66586);#C33764, #1D2671*/
 }
 .contenedor_0 .titles{
   align-items: center;
@@ -283,6 +282,12 @@ header .icon-o span{
   letter-spacing: 2px;
   word-spacing: 2px;
   font-size: 1em;
+  line-height: 30px;
+}
+.contenedor_5 h1 span{
+  background-color: black;
+  color: white;
+  padding: 8px 20px;
 }
 .contenedor_5 .icosvg{
   padding: 25px 10% 0 10%;
@@ -302,6 +307,34 @@ header .icon-o span{
 #ba1, #ba2{
   font-size: 4em;
   padding-top: 30px;
+}
+
+
+
+/*-------- NOTE: contenedor ------------*/
+.contenedor_7{
+  height: 60vh;
+}
+.contenedor_7 h1{
+  font-family: 'NTR', sans-serif;
+  font-size: 1.5em;
+  padding-top: 30vh;
+  font-weight: lighter;
+  text-align: center;
+}
+.contenedor_7 h1 span{
+  background-color: black;
+  color: white;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+footer{
+  background-color: black;
+  text-align: center;
+  padding: 8% 0;
+  color: white;
+  text-transform: uppercase;
+  word-spacing: 2px;
 }
 
 
@@ -471,6 +504,24 @@ header .icon-o span{
     font-size: 4em;
     padding-top: 30px;
   }
+
+  /*-------- NOTE: contenedor ------------*/
+.contenedor_7{
+  height: 70vh;
+}
+.contenedor_7 h1{
+  font-family: 'NTR', sans-serif;
+  font-size: 3em;
+  padding-top: 30vh;
+  font-weight: lighter;
+  text-align: center;
+}
+.contenedor_7 h1 span{
+  background-color: black;
+  color: white;
+  padding-left: 35px;
+  padding-right: 35px;
+}
 
 
 }
@@ -654,6 +705,7 @@ header .icon-o span{
   .contenedor_5 .icosvg{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, 145px);
   }
   .contenedor_5 .icosvg i{
     font-size: 10em;
@@ -662,6 +714,25 @@ header .icon-o span{
     font-size: 6em;
     padding-top: 30px;
   }
+
+
+/*-------- NOTE: contenedor ------------*/
+.contenedor_7{
+  height: 70vh;
+}
+.contenedor_7 h1{
+  font-family: 'NTR', sans-serif;
+  font-size: 5em;
+  padding-top: 30vh;
+  font-weight: lighter;
+  text-align: center;
+}
+.contenedor_7 h1 span{
+  background-color: black;
+  color: white;
+  padding-left: 35px;
+  padding-right: 35px;
+}
 
 
 
