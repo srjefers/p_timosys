@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="css/cs_style.css">
     <link rel="stylesheet" href="css/cont.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/fontello-embedded.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.js"></script>
   </head>
-  <body class="wow fadeIn">
+  <body class="wow fadeIn" >
     <header>
       <div class="logofixed">
         <h1>Timo</h1>
@@ -27,13 +29,14 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <a class="menu-li" href="#0">Inicio</a>
           <a class="menu-li" href="#0">FAQ</a>
-          <a class="menu-li" id="contact-form" href="#0">Contacto</a>
+          <!--a class="menu-li" id="contact-form" href="#0">Contacto</a-->
+          <a class="menu-li" id="contact-form" href="#conta">Contacto</a>
         </div>
       </nav>
     </header>
 
     <!--       pop-UP       -->
-    <div class="contenedor_con" role="alert">
+    <!--div class="contenedor_con" role="alert">
       <a href="#1" class="closebtn1" onclick="" id="contact-cls">&times;</a>
       <div class="contenedor_form">
         <form class="acciones" action="php/resend-to.php" method="post">
@@ -45,7 +48,7 @@
           <input type="submit" name="" value="ENVIAR" id="boton">
         </form>
       </div>
-    </div>
+    </div-->
 
     <div class="contenedor_0">
       <div class="data wow bounceInUp">
@@ -67,7 +70,7 @@
     </div>
 
     <div class="contenedor_1 wow bounceInUp" id="articulo">
-      <h1>How it works?</h1>
+      <h1>Como funciona?</h1>
       <p>Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
        dolore eu fugiat nulla pariatur.</p>
@@ -119,10 +122,28 @@
       <a href="#" id="btn4">Empezemos</a>
     </div>
     <div class="contenedor_5">
-
+      <h1>Reprehenderit in voluptate velit</h1>
+      <div class="icosvg">
+        <i class="devicon-amazonwebservices-plain-wordmark"></i>
+        <i class="devicon-oracle-original"></i>
+        <i id="ba2" class="devicon-redhat-plain-wordmark"></i>
+        <i id="ba1" class="devicon-postgresql-plain-wordmark"></i>
+      </div>
     </div>
 
 
+    <!--footer>
+      <div class="logo">
+          <h1>timo</h1>
+          <h2>SYSTEMS</h2>
+      </div>
+      <div class="submenu">
+        <a href="#">Inicio</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contacto</a>
+      </div>
+      <div class="info"></div>
+    </footer-->
     <script src="js/wow.js"></script>
               <script>
                 new WOW().init();
@@ -138,6 +159,19 @@
         //document.getElementById("main_content").style.marginRight= "0";
       }
     </script>
+    <script>
+      var app = angular.module("myApp", ["ngRoute"]);
+      app.config(function($routeProvider){
+          $routeProvider
+          .when("/",{
+              templateUrl: "index.html"
+          })
+          .when("/conta",{
+              templateUrl: "cont.htm"
+          });
+      });
+    </script>
     <script src="js/cs_js.js"></script>
+    <script src="js/route.js"></script>
   </body>
 </html>
