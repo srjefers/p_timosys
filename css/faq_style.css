@@ -13,11 +13,14 @@
     text-decoration: none;
     outline: none;
 }
+* a{
+	color: black;
+}
 /* ESTILOS NORMALES (para móviles en vertical)
    ========================================================================= */
 body{
 	background-color:white;
-	height: 350vh;
+	height: 150vh;
 }
 header{
 	background-color: white;
@@ -32,52 +35,97 @@ header .icon-o{
 	border-bottom: 1px solid #e3e3e3;
 }
 .shrink .logofixed h1{
-	font-size: 1.9em;
-}
-.shrink .icon-o{
-	padding-top: 15px;
-}
-.shrink .icon-o span{
 	font-size: 1.8em;
 }
+.shrink .icon-o{
+	padding-top: 14px;
+}
+.shrink .icon-o span{
+	font-size: 1.7em;
+}
 
+.contenedor_0{
+	color: black;
+	padding: 140px 15% 0 15%;
+	text-align: center;
+}
+.contenedor_0 h1{
+	text-rendering: geometricPrecision;
+	font-size: 1.9em;
+	padding-bottom: 15px;
+	font-family: 'Quicksand', sans-serif;
+}
+.f_dir{
+	padding-top: 80px;
+	padding-left: 15%;
+}
+.f_dir .pak{
+	padding-top: 30px;
+}
+.f_dir h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.3em;
+	padding-bottom: 20px;
+}
+.f_dir a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	padding-left: 10px;
+	line-height: 40px;
+	font-weight: bolder;
+	border-left: 3px solid transparent;
+	color:rgb(0, 123, 223);
+}
+.f_dir a:hover{
+	color: rgb(0, 109, 198);
+	border-left: 3px solid rgb(255, 60, 50);/*rgb(251, 169, 5)  rgb(255, 60, 50)*/
+}
+.f_dat{
+	padding-top: 70px;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-bottom: 120px;
+}
+.f_dat .art{
+	padding-top: 50px;
+}
+.f_dat .art h1, .f_dat .art p{
+	font-family: 'Montserrat', sans-serif;
+}
+.f_dat .art p{
+	padding-top: 15px;
+}
 /* RESPONSIVE
    ========================================================================= /
 
 / Móviles en horizontal o tablets en vertical
    ------------------------------------------------------------------------- */
 @media (min-width: 768px) {	
-	
+	.contenedor_0 h1{
+		text-rendering: geometricPrecision;
+		font-size: 2em;
+		padding-bottom: 15px;
+		font-family: 'Quicksand', sans-serif;
+	}
+		
 }
 
 /* Tablets en horizonal y escritorios normales
    ------------------------------------------------------------------------- */
 @media (min-width: 1024px) {
-	
-}
-
-/* Escritorios muy anchos
-   ------------------------------------------------------------------------- */
-@media (min-width: 1200px) {
-	.contenedor_0{
-		color: black;
-		padding: 170px 15% 0 15%;
-		text-align: center;
-	}
 	.contenedor_0 h1{
 		text-rendering: geometricPrecision;
 		font-size: 2.5em;
 		padding-bottom: 15px;
 		font-family: 'Quicksand', sans-serif;
 	}
-	.contenedor_0 p{
-		font-family: 'Montserrat', sans-serif;
-		font-size: 1.2em;
-		font-weight: lighter;
-		letter-spacing: 1px;
-		word-spacing: 2px;
-		color: rgb(107, 107, 107);
-	}
+	
+}
+
+/* Escritorios muy anchos
+   ------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+	
 
 }
 

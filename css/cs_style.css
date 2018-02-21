@@ -194,8 +194,7 @@ header .icon-o span{
 }
 
 /* -----------NOTE: imagenes y texto con animacion y movimiento-------- */
-.contenedor_3{
-}
+
 .contenedor_3 .images{
   /*padding-left: 2%;------>imagen solida*/
   padding-left: 4%;
@@ -310,7 +309,57 @@ header .icon-o span{
 }
 
 
-
+/*----------NOTE: consola------------*/
+.contenedor_8{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.contenedor_8 h1{
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.contenedor_8 .head{
+  background-color: rgb(231, 231, 231);
+  height: 30px;
+  padding-left: 5px;
+  padding-top: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.contenedor_8 .head span{
+  border-radius: 200px;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-left: 3px;
+}
+#btn1{
+  background-color: rgb(250, 95, 92);
+}
+#btn2{
+  background-color: rgb(251, 191, 71);
+}
+#btn3{
+  background-color: rgb(59, 200, 78);
+}
+.contenedor_8 .bash{
+  background-color: rgb(24, 24, 24);
+  padding: 20px 5px 300px 10px;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(115, 210, 22);
+  display: flex;
+  font-size: 2.5em;
+}
+.contenedor_8 .bash .console-container{
+  position: relative;
+  display: flex;
+  padding-left: 4px;
+}
+.contenedor_8 .bash .console-underscore {
+   display:inline-block;
+   top:-0.14em;
+}
 /*-------- NOTE: contenedor ------------*/
 .contenedor_7{
   height: 60vh;
@@ -673,8 +722,6 @@ header .icon-o span{
     padding-left: 8%;
     padding-right: 8%;
   }
-
-
 
 
   /* ---------------NOTE: contenedor 4-------------- */
