@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cs_style.css">
     <link rel="stylesheet" href="css/cont.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -16,7 +15,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script> 
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.js"></script>
   </head>
-  <body class="wow fadeIn" >
+  <body class="wow fadeIn" ng-controller="main">
     <header>
       <div class="logofixed">
         <h1>Timo</h1>
@@ -35,8 +34,7 @@
       </nav>
     </header>
 
-    <!--       pop-UP       -->
-    <!--div class="contenedor_con" role="alert">
+    <div class="contenedor_con" role="alert">
       <a href="#1" class="closebtn1" onclick="" id="contact-cls">&times;</a>
       <div class="contenedor_form">
         <form class="acciones" action="php/resend-to.php" method="post">
@@ -48,7 +46,7 @@
           <input type="submit" name="" value="ENVIAR" id="boton">
         </form>
       </div>
-    </div-->
+    </div>
 
     <div class="contenedor_0">
       <div class="data wow bounceInUp">
@@ -62,11 +60,6 @@
         </div>
         <a class="menu-li" id="contact-form" href="#articulo"><span class="icon-down"></span>Learn more</a>
       </div>
-      <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-      officia deserunt mollit anim id est laborum.-->
     </div>
 
     <div class="contenedor_1 wow bounceInUp" id="articulo">
@@ -106,7 +99,6 @@
     <div class="contenedor_3">
       <div class="images">
         <div class="uno wow bounceInRight">
-          <!--img src="other/arch.png" alt="desk"-->
           <img src="other/ba.jpg" alt="desk">
         </div>
         <div class="dos wow bounceInRight">
@@ -134,22 +126,7 @@
     <div class="contenedor_7">
         <h1 class="wow bounceInUp">Sorry, we're still <span>working... :(</span></h1>
     </div>
-    <footer class="wow bounceInUp">
-      <h1>footer prron alv :v</h1>
-    </footer>
-
-    <!--footer>
-      <div class="logo">
-          <h1>timo</h1>
-          <h2>SYSTEMS</h2>
-      </div>
-      <div class="submenu">
-        <a href="#">Inicio</a>
-        <a href="#">FAQ</a>
-        <a href="#">Contacto</a>
-      </div>
-      <div class="info"></div>
-    </footer-->
+    <div ng-view></div>
     <script src="js/wow.js"></script>
               <script>
                 new WOW().init();
@@ -164,18 +141,6 @@
         document.getElementById("mySidenav").style.width = "0";
         //document.getElementById("main_content").style.marginRight= "0";
       }
-    </script>
-    <script>
-      var app = angular.module("myApp", ["ngRoute"]);
-      app.config(function($routeProvider){
-          $routeProvider
-          .when("/",{
-              templateUrl: "index.html"
-          })
-          .when("/conta",{
-              templateUrl: "cont.htm"
-          });
-      });
     </script>
     <script src="js/cs_js.js"></script>
     <script src="js/route.js"></script>

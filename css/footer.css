@@ -1,0 +1,108 @@
+/*
+  font-family: 'NTR', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Pacifico', cursive;
+*/
+/* ESTILOS NORMALES (para móviles en vertical)
+   ========================================================================= */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 35px;
+}
+footer a{
+    letter-spacing: 1px;
+    color:white;
+}
+footer .logo h1{
+    text-transform: capitalize;
+    text-rendering: geometricPrecision;
+    letter-spacing: 4px;
+    font-size: 3.5em;
+    font-family: 'Pacifico', cursive;
+}
+footer .logo h2{
+    letter-spacing: 6px;
+    margin-top: -20px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-family: 'Quicksand', sans-serif;
+    text-rendering: geometricPrecision;
+  }
+footer .info{
+    font-family: 'Quicksand', sans-serif;
+    text-rendering: geometricPrecision;
+    padding-top: 25px;
+    font-weight: lighter;
+}
+footer .info h3{
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+footer .info a, footer .info p{
+    color: rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+footer .info a:hover, footer .info p:hover, footer .com a:hover, footer .help a:hover{
+    color: white;
+}
+footer .com h3, footer .help h3{
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif;
+    text-rendering: geometricPrecision;
+    padding-top: 25px;
+}
+footer .com a, footer .help a{
+    color: rgb(200,200,200);
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-size: 0.9em;
+    font-family: 'Quicksand', sans-serif;
+    text-rendering: geometricPrecision;
+    display: block;
+}
+
+
+/* RESPONSIVE
+   ========================================================================= /
+
+/ Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+@media (min-width: 768px) { 
+    footer{
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    footer .don{
+        padding-bottom: 20px;
+    }
+    footer .obs{
+        text-align: left;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%)
+    }
+    footer .obs .info{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    footer .obs .com, footer .obs .help{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+/* Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- */
+@media (min-width: 1024px) { }
+
+/* Escritorios muy anchos
+   ------------------------------------------------------------------------- */
+@media (min-width: 1200px) { }
+

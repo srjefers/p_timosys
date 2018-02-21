@@ -1,0 +1,115 @@
+/* ESTILOS NORMALES (para móviles en vertical)
+   ========================================================================= */
+header{
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+header .logofixed{
+  font-family: 'Pacifico', cursive;
+  padding-left: 3%;
+  text-transform: capitalize;
+  color: white;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.02s;
+  -moz-transition: all 0.02s;
+  transition: all 0.02s;
+}
+head .logofixed h1{
+
+  -webkit-transition: all 0.06s;
+  -moz-transition: all 0.06s;
+  transition: all 0.06s;
+}
+header .icon-o{
+  color: white;
+  -webkit-transition: all 0.06s;
+  -moz-transition: all 0.06s;
+  transition: all 0.06s;
+  padding: 10px 0px 0px 0px;
+  margin-right: 3%;
+  margin-left: auto;
+}
+header .icon-o span{
+  cursor: pointer;
+  font-size: 2em;
+  padding: 15px 15px 10px 15px;
+  text-rendering: optimizeLegibility;
+}
+.shrink .logofixed h1{
+  font-size: 1.9em;
+}
+.shrink .icon-o{
+  padding-top: 8px;
+}
+.shrink .icon-o span{
+  font-size: 1.8em;
+}
+
+
+
+/* RESPONSIVE
+   ========================================================================= /
+
+/ Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+@media (min-width: 768px) {	
+  header .logofixed{
+    padding-left: 5%;
+    padding-top: 10px;
+  }
+  header .icon-o{
+    padding-top: 10px;
+  }
+  header .logofixed h1{
+    font-size: 2.5em;
+  }
+  .shrink .logofixed h1{
+    font-size: 1.9em;
+  }
+  .shrink .icon-o{
+    padding-top: 8px;
+  }
+  .shrink .icon-o span{
+    font-size: 1.9em;
+  }
+
+
+}
+
+/* Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  header .logofixed{
+    padding-left: 8%;
+  }
+  header .logofixed h1{
+    font-size: 2.4em;
+  }
+  header .icon-o{
+    padding-top: 10px;
+  }
+  header .icon-o span{
+    font-size: 2.2em;
+  }
+
+
+}
+
+/* Escritorios muy anchos
+   ------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  header .logofixed{
+    padding-left: 8%;
+    padding-top: 5px;
+  }
+  header .icon-o{
+    padding-top: 10px;
+  }
+
+
+}
+
