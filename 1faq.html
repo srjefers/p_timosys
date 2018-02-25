@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ</title>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="css/headless.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/faq_style.css">
+    <link rel="stylesheet" href="css/fontello-embedded.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="js/pads.js"></script>
+  </head>
+  <body ng-controller="main">
+    <header>
+      <div class="logofixed">
+        <h1>Timo</h1>
+      </div>
+      <div class="icon-o">
+        <span class="icon-menu" onclick="openNav()"></span>
+      </div>
+      <nav class="overlay">
+        <div class="sidenav" id="mySidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a class="menu-li" href="index.html">Inicio</a>
+          <a class="menu-li" href="">FAQ</a>
+          <a class="menu-li" id="" href="we.html">Nosotros</a>
+          <a class="menu-li" id="contact-form" href="#conta">Contacto</a>
+        </div>
+      </nav>
+    </header>
+    <div class="contenedor_0">
+      <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+      
+    </div>
+
+	<div class="f_dir">
+    <article class="pak" id="gen">
+      <h1>General</h1>
+      <li><a href="#rst">Lorem ipsum prueba 1</a></li>	
+      <li><a href="#sst">Lorem ipsum prueba 2</a></li>	
+      <li><a href="#tst">Lorem ipsum prueba 3</a></li>	
+      <li><a href="#cst">Lorem ipsum prueba 4</a></li>	
+      <li><a href="#qst">Lorem ipsum prueba 5</a></li>	
+      <li><a href="#sist">Lorem ipsum prueba 6</a></li>	
+      <li><a href="#sest">Lorem ipsum prueba 7</a></li>	
+    </article>
+    <article class="pak" id="sec">
+      <h1>Seguridad</h1>
+      <li><a href="#rst">Data ipsum prueba 1</a></li>	
+      <li><a href="#sst">Data ipsum prueba 2</a></li>	
+      <li><a href="#tst">Data ipsum prueba 3</a></li>	
+      <li><a href="#cst">Data ipsum prueba 4</a></li>	
+      <li><a href="#qst">Data ipsum prueba 5</a></li>	
+      <li><a href="#sist">Data ipsum prueba 6</a></li>	
+      <li><a href="#sest">Data ipsum prueba 7</a></li>	
+    </article>
+	</div>
+	<div class="f_dat">
+    <article class="art" id="rst">
+      <h1>Lorem ipsum dolor 1</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam repellat placeat 
+        inventore illum illo impedit eaque 
+        consectetur sunt, incidunt dolorum! Exercitationem minima 
+        libero voluptatum error.</p>
+    </article>
+    <article class="art" id="sst">
+        <h1>Lorem ipsum dolor 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam repellat placeat 
+          inventore illum illo impedit eaque 
+          consectetur sunt, incidunt dolorum! Exercitationem minima 
+          libero voluptatum error.</p>
+      </article>
+      <article class="art" id="tst">
+        <h1>Lorem ipsum dolor 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam repellat placeat 
+          inventore illum illo impedit eaque 
+          consectetur sunt, incidunt dolorum! Exercitationem minima 
+          libero voluptatum error.</p>
+      </article>
+      <article class="art" id="cst">
+        <h1>Lorem ipsum dolor 4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam repellat placeat 
+          inventore illum illo impedit eaque 
+          consectetur sunt, incidunt dolorum! Exercitationem minima 
+          libero voluptatum error.</p>
+      </article>
+      <article class="art" id="qst">
+        <h1>Lorem ipsum dolor 5</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam repellat placeat 
+          inventore illum illo impedit eaque 
+          consectetur sunt, incidunt dolorum! Exercitationem minima 
+          libero voluptatum error.</p>
+      </article>
+      <article class="art" id="sist">
+        <h1>Lorem ipsum dolor 6</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam repellat placeat 
+          inventore illum illo impedit eaque 
+          consectetur sunt, incidunt dolorum! Exercitationem minima 
+          libero voluptatum error.</p>
+      </article>
+      <article class="art" id="sest">
+        <h1>Lorem ipsum dolor 7</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam repellat placeat 
+          inventore illum illo impedit eaque 
+          consectetur sunt, incidunt dolorum! Exercitationem minima 
+          libero voluptatum error.</p>
+      </article>
+	</div>
+
+
+    <div ng-controller="unom"></div>
+
+
+
+    <!--li><a href="#">cero</a></li>
+    <li><a href="#uno">uno</a></li>
+    <li><a href="#dos">dos</a></li>
+    <li><a href="#tres">tres</a></li-->
+    
+    <div ng-view></div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        //document.getElementById("main_content").style.marginRight = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        //document.getElementById("main_content").style.marginRight= "0";
+      }
+    </script>      
+    <script src="js/faq.js"></script>
+  </body>
+</html>
+
