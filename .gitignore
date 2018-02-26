@@ -1,0 +1,4 @@
+#este archivo ignora a todos los demas que esten dentro de el v:
+*.txt
+.hola.swp
+
