@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Roboto');
-/*
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700');
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Roboto');
+
   font-family: 'Montserrat', sans-serif;
   font-family: 'Pacifico', cursive;
   font-family: 'Roboto', sans-serif;
@@ -13,6 +14,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   outline: none;
+  text-rendering: optimizeLegibility;
 }
 /* ESTILOS NORMALES (para móviles en vertical)
    ========================================================================= */
@@ -31,7 +33,6 @@ header .logofixed{
   padding-left: 3%;
   text-transform: capitalize;
   color: white;
-  text-rendering: optimizeLegibility;
   letter-spacing: 2px;
   line-height: 70px;
   -webkit-transition: all 0.02s;
@@ -51,7 +52,6 @@ header .icon-o span{
   cursor: pointer;
   font-size: 2.3em;
   padding: 15px 15px 10px 15px;
-  text-rendering: optimizeLegibility;
 }
 .sidenav {
   border-left: 1px solid #e3e3e3;
@@ -70,7 +70,7 @@ header .icon-o span{
   padding: 0px 8px 0px 32px;
   text-decoration: none;
   font-size: 25px;
-  font-family: 'NTR', sans-serif;
+  
   font-weight: lighter;
   color: #53575a;
   display: block;
@@ -116,7 +116,7 @@ header .icon-o span{
 }
 .contenedor_2 .text h2{
   text-rendering: optimizeLegibility;
-  font-family: 'NTR', sans-serif;
+  
   font-weight: lighter;
   font-size: 2em;
 }
@@ -125,8 +125,7 @@ header .icon-o span{
   padding-right: 20%;
   color: #666;
   font-size: 1.1em;
-  font-family: 'Quicksand', sans-serif;
-  text-rendering: geometricPrecision;
+  
   font-weight: lighter;
   letter-spacing: 2px;
 }
@@ -198,8 +197,7 @@ header .icon-o span{
     font-size: 3em;
   }
   .contenedor_2 .text h2{
-    text-rendering: optimizeLegibility;
-    font-family: 'NTR', sans-serif;
+    
     font-weight: lighter;
     font-size: 2em;
   }
@@ -208,8 +206,7 @@ header .icon-o span{
     padding-right: 20%;
     color: #666;
     font-size: 1.1em;
-    font-family: 'Quicksand', sans-serif;
-    text-rendering: geometricPrecision;
+    
     font-weight: lighter;
     letter-spacing: 2px;
   }
@@ -276,8 +273,7 @@ header .icon-o span{
     font-size: 3em;
   }
   .contenedor_2 .text h2{
-    text-rendering: optimizeLegibility;
-    font-family: 'NTR', sans-serif;
+    
     font-weight: lighter;
     font-size: 2em;
   }
@@ -286,8 +282,7 @@ header .icon-o span{
     padding-right: 20%;
     color: #666;
     font-size: 1.1em;
-    font-family: 'Quicksand', sans-serif;
-    text-rendering: geometricPrecision;
+    
     font-weight: lighter;
     letter-spacing: 2px;
   }

@@ -12,11 +12,12 @@
   padding-top: 60px;
 }
 .sidenav a {
-  padding: 0px 8px 0px 32px;
+  padding: 15px 8px 0px 32px;
   text-decoration: none;
-  font-size: 25px;
-  font-family: 'NTR', sans-serif;
-  font-weight: lighter;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   color: #53575a;
   display: block;
   transition: 0.3s;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|NTR|Pacifico|Quicksand|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,700');
 /*
   font-family: 'NTR', sans-serif;
   font-family: 'Roboto', sans-serif;
@@ -12,6 +12,7 @@
     list-style: none;
     text-decoration: none;
     outline: none;
+    text-rendering: optimizeLegibility;
 }
 * a{
 	color: black;
@@ -50,10 +51,10 @@ header .icon-o{
 	text-align: center;
 }
 .contenedor_0 h1{
-	text-rendering: geometricPrecision;
 	font-size: 1.9em;
 	padding-bottom: 15px;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
 .f_dir{
 	padding-top: 80px;
@@ -63,13 +64,16 @@ header .icon-o{
 	padding-top: 30px;
 }
 .f_dir h1{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serifu;
+	font-weight: 400;
 	font-size: 1.3em;
 	padding-bottom: 20px;
 }
 .f_dir a{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1.2em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 1.1em;
 	padding-left: 10px;
 	line-height: 40px;
 	font-weight: bolder;
@@ -90,9 +94,16 @@ header .icon-o{
 	padding-top: 50px;
 }
 .f_dat .art h1, .f_dat .art p{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 }
 .f_dat .art p{
+	letter-spacing: 1px;
+	font-size: 1em;
+	line-height: 23px;
+	color: rgb(107, 107, 107);
+	word-spacing: 2px;
+	font-weight: 300;
 	padding-top: 15px;
 }
 /* RESPONSIVE
@@ -102,10 +113,9 @@ header .icon-o{
    ------------------------------------------------------------------------- */
 @media (min-width: 768px) {	
 	.contenedor_0 h1{
-		text-rendering: geometricPrecision;
 		font-size: 2em;
 		padding-bottom: 15px;
-		font-family: 'Quicksand', sans-serif;
+		font-family: 'Roboto', sans-serif;
 	}
 		
 }
@@ -114,10 +124,9 @@ header .icon-o{
    ------------------------------------------------------------------------- */
 @media (min-width: 1024px) {
 	.contenedor_0 h1{
-		text-rendering: geometricPrecision;
 		font-size: 2.5em;
 		padding-bottom: 15px;
-		font-family: 'Quicksand', sans-serif;
+		font-family: 'Roboto', sans-serif;
 	}
 	
 }

@@ -25,20 +25,23 @@ footer .logo h1{
     font-family: 'Pacifico', cursive;
 }
 footer .logo h2{
-    letter-spacing: 6px;
+    letter-spacing: 8px;
     margin-top: -20px;
     text-transform: uppercase;
-    font-size: 0.8em;
-    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     text-rendering: geometricPrecision;
   }
 footer .info{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-rendering: geometricPrecision;
     padding-top: 25px;
-    font-weight: lighter;
+    font-weight: 300;
 }
 footer .info h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 1.3em;
     letter-spacing: 1px;
 }
@@ -53,7 +56,8 @@ footer .info a:hover, footer .info p:hover, footer .com a:hover, footer .help a:
 footer .com h3, footer .help h3{
     font-size: 1.3em;
     letter-spacing: 1px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     text-rendering: geometricPrecision;
     padding-top: 25px;
 }
@@ -62,7 +66,8 @@ footer .com a, footer .help a{
     letter-spacing: 2px;
     font-weight: lighter;
     font-size: 0.9em;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     text-rendering: geometricPrecision;
     display: block;
 }

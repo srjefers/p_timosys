@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|NTR|Pacifico|Quicksand|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700');
 /*
   font-family: 'NTR', sans-serif;
   font-family: 'Roboto', sans-serif;
@@ -14,6 +14,7 @@
     list-style: none;
     text-decoration: none;
     outline: none;
+    text-rendering: optimizeLegibility;
 }
 *:before, *:after {
     box-sizing: border-box;
@@ -38,7 +39,6 @@ header .logofixed{
     padding-left: 3%;
     text-transform: capitalize;
     color: white;
-    text-rendering: optimizeLegibility;
     letter-spacing: 2px;
     -webkit-transition: all 0.02s;
     -moz-transition: all 0.02s;
@@ -63,7 +63,6 @@ header .icon-o span{
     cursor: pointer;
     font-size: 2em;
     padding: 15px 15px 10px 15px;
-    text-rendering: optimizeLegibility;
 }
 .shrink .logofixed h1{
     font-size: 1.9em;
@@ -89,13 +88,10 @@ header .icon-o span{
 }
 .contenedor_0 .titles h1{
     color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
-    letter-spacing: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     padding-bottom: 20px;
-    text-rendering: geometricPrecision;
     font-size: 1.9em;
-    font-weight: 100;
 }
 .contenedor_0 .titles h1 span{
     background-color: black;
@@ -105,8 +101,8 @@ header .icon-o span{
 .contenedor_0 a{
     color: white;
     font-size: 0.8em;
-    font-family: 'Montserrat', sans-serif;
-    text-rendering: geometricPrecision;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     letter-spacing: 2px;
 }
 .contenedor_0 a span{
@@ -114,10 +110,8 @@ header .icon-o span{
     border: 1px solid white;
     border-radius: 25px;
     padding: 10px 10px;
-    margin-right: 5px;
     font-size: 0.8em;
-    font-family: 'Montserrat', sans-serif;
-    text-rendering: geometricPrecision;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
 }
 .contenedor_0 a span:hover{
@@ -146,18 +140,16 @@ header .icon-o span{
     font-size: 3em;
 }
 .contenedor_1 .text h2{
-    text-rendering: optimizeLegibility;
-    font-family: 'NTR', sans-serif;
-    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 2em;
 }
 .contenedor_1 .text p{
-    padding: 0 8% 55px 8%;
-    color: #666;
-    font-size: 1.1em;
-    font-family: 'Quicksand', sans-serif;
-    text-rendering: geometricPrecision;
-    font-weight: lighter;
+    padding: 15px 8% 55px 8%;
+    color: rgb(107, 107, 107);
+    font-size: 1em;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -185,35 +177,30 @@ header .icon-o span{
     padding-bottom: 50px;
 }
 .contenedor_2 .texto h1{
-    font-family: 'NTR', sans-serif;
-    text-rendering: geometricPrecision;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 2.1em;
-    font-weight: lighter;
     letter-spacing: 1px;
     word-spacing: 2px;
 }
 .contenedor_2 .texto p{
-    padding-bottom: 25px;
-    font-size: 1.1em;
-    font-family: 'Quicksand', sans-serif;
-    text-rendering: geometricPrecision;
-    font-weight: lighter;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     letter-spacing: 2px;
     color: rgb(107, 107, 107);
     word-spacing: 2px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 15px 10% 25px 10%;
 }
 /*-----------NOTE:consola y texto------------*/
 .contenedor_3{
     text-align: center;
 }
 .contenedor_3 h1{
-    font-weight: lighter;
     letter-spacing: 1px;
     word-spacing: 2px;
-    font-family: 'NTR', sans-serif;
-    text-rendering: geometricPrecision;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 2.1em;
 }
 .contenedor_3 .image{
@@ -230,22 +217,20 @@ header .icon-o span{
     text-align: center;
 }
 .contenedor_4 #texto{
-    padding: 20px 8% 70px;
+    padding: 10px 8% 70px;
 }
 .contenedor_4 #texto h1{
-    padding-bottom: 4px;
-    font-family: 'NTR', sans-serif;
-    text-rendering: geometricPrecision;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 2.1em;
-    font-weight: lighter;
     letter-spacing: 1px;
     word-spacing: 2px;
 }
 .contenedor_4 #texto p{
-    font-size: 1.1em;
-    font-family: 'Quicksand', sans-serif;
-    text-rendering: geometricPrecision;
-    font-weight: lighter;
+    font-size: 1em;
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     letter-spacing: 2px;
     color: rgb(107, 107, 107);
     word-spacing: 2px;
@@ -267,11 +252,10 @@ header .icon-o span{
 }
 .contenedor_5 h1{
     text-align: center;
-    padding-bottom: 4px;
-    font-family: 'NTR', sans-serif;
-    text-rendering: geometricPrecision;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 2.1em;
-    font-weight: lighter;
     letter-spacing: 1px;
     word-spacing: 2px;
 }
@@ -288,14 +272,14 @@ header .icon-o span{
     padding-right: 20px;
 }
 .contenedor_5 .boxes .box h2{
-    font-family: 'NTR', sans-serif;
-    text-rendering: geometricPrecision;
-    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
 }
 .contenedor_5 .boxes .box p{
-    font-family: 'Quicksand', sans-serif;
-    text-rendering: geometricPrecision;
-    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
     letter-spacing: 2px;
     color: rgb(107, 107, 107);
     padding-bottom: 15px;
@@ -339,12 +323,8 @@ header .icon-o span{
     }
     .contenedor_0 .titles h1{
         color: white;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: lighter;
         letter-spacing: 1px;
-        text-rendering: geometricPrecision;
         font-size: 2.3em;
-        font-weight: 100;
     }
     .contenedor_0 a{
         margin-left: 5%;
@@ -417,20 +397,14 @@ header .icon-o span{
     }
     .contenedor_0 .titles h1{
         color: white;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: lighter;
         letter-spacing: 1px;
-        text-rendering: geometricPrecision;
         font-size: 3.5em;
-        font-weight: 100;
     }
     .contenedor_0 a{
         margin-left: 8%;
         text-align: inherit;
         color: white;
         font-size: 0.9em;
-        font-family: 'Montserrat', sans-serif;
-        text-rendering: geometricPrecision;
         letter-spacing: 2px;
     }
     .contenedor_0 a span{
@@ -440,8 +414,6 @@ header .icon-o span{
         padding: 10px 10px;
         margin-right: 5px;
         font-size: 0.8em;
-        font-family: 'Montserrat', sans-serif;
-        text-rendering: geometricPrecision;
         letter-spacing: 2px;
     }
 
@@ -461,9 +433,6 @@ header .icon-o span{
         font-size: 3em;
     }
     .contenedor_1 .text h2{
-        text-rendering: optimizeLegibility;
-        font-family: 'NTR', sans-serif;
-        font-weight: lighter;
         font-size: 2em;
     }
     .contenedor_1 .text p{
@@ -471,9 +440,6 @@ header .icon-o span{
         padding-right: 20%;
         color: #666;
         font-size: 1.1em;
-        font-family: 'Quicksand', sans-serif;
-        text-rendering: geometricPrecision;
-        font-weight: lighter;
         letter-spacing: 2px;
     }
     /*---------NOTE: iconos rotate y texto------*/
@@ -499,13 +465,13 @@ header .icon-o span{
         grid-template-rows: 500px;
     }
     .contenedor_4 #texto{
-        padding: 25% 10% 0%;
+        padding: 20% 10% 0%;
     }
     .contenedor_4 #imagen{
         height: 500px;
         background-size: cover;
         background-color: #333;
-        background-image: url(../jpg/bo1.jpg);
+ /*       background-image: url(../jpg/bo1.jpg);*/
     }
 
     /*-----------NOTE:bloques v:--------------*/
@@ -557,9 +523,6 @@ header .icon-o span{
         font-size: 3em;
     }
     .contenedor_1 .text h2{
-        text-rendering: optimizeLegibility;
-        font-family: 'NTR', sans-serif;
-        font-weight: lighter;
         font-size: 2em;
     }
     .contenedor_1 .text p{
@@ -567,9 +530,6 @@ header .icon-o span{
         padding-right: 20%;
         color: #666;
         font-size: 1.1em;
-        font-family: 'Quicksand', sans-serif;
-        text-rendering: geometricPrecision;
-        font-weight: lighter;
         letter-spacing: 2px;
     }
     
